@@ -1,0 +1,25 @@
+import { useState } from 'react';
+
+function App() {
+	const [counter, setCounter] = useState(0);
+
+	return (
+		<center>
+			<div>
+				<button onClick={() => setCounter(counter + 1)}>
+					Increment
+				</button>
+				<button onClick={() => setCounter(counter - 1)}>
+					Decrement
+				</button>
+				<br />
+				<hr />
+				count is :{counter}
+				<br />
+				<hr />
+				<button onClick={() => setCounter(0)}>Clear</button>
+			</div>
+		</center>
+	)
+}
+export default App;
